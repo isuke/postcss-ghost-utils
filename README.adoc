@@ -1,0 +1,14 @@
+:chapter-label:
+:icons: font
+:lang: en
+:sectanchors:
+:sectnums:
+:sectnumlevels: 3
+:source-highlighter: highlightjs
+:toc:
+:toclevels: 1
+
+:author: isuke
+:email: isuke770@gmail.com
+
+= postcss-ghost-utils

@@ -1,0 +1,9 @@
+{
+  "name": "postcss-ghost-utils",
+  "version": "0.0.1",
+  "description": "PostCSS plugin to add helper utils for your CSS",
+  "main": "index.js",
+  "author": "isuke",
+  "license": "MIT",
+  "private": false
+}
