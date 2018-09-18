@@ -1,5 +1,5 @@
-module.exports = postcss.plugin('postcss-ghost-utils', opts => {
-  return (root, result) => {
-    // Plugin code
-  }
+const postcss = require('postcss')
+
+module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (_root, _result) => {
+  // Plugin code
 })

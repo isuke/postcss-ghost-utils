@@ -12,3 +12,5 @@
 :email: isuke770@gmail.com
 
 = postcss-ghost-utils
+
+image:https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master["Build Status", link="https://travis-ci.org/isuke/postcss-ghost-utils"]
