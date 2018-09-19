@@ -7,13 +7,15 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint index.js lib/**/*.js",
-    "fix": "eslint --fix index.js lib/**/*.js"
+    "lint": "eslint index.js test.js lib/**/*.js",
+    "fix": "eslint --fix index.js test.js lib/**/*.js",
+    "test": "ava --verbose"
   },
   "dependencies": {
     "postcss": "^7.0.2"
   },
   "devDependencies": {
+    "ava": "^0.25.0",
     "eslint": "^5.6.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-prettier": "^2.6.2",
