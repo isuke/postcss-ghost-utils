@@ -5,7 +5,7 @@ const test = require('ava')
 
 const ghost = require('./')
 
-const names = ['font-size-line-height', 'margin-top-bottom', 'margin-left-right']
+const names = ['font-size-line-height', 'margin-top-bottom', 'margin-left-right', 'padding-top-bottom', 'padding-left-right']
 
 const tmpDirPath = fs.mkdtempSync(`${os.tmpdir()}/postcss-ghost-utils-`)
 
