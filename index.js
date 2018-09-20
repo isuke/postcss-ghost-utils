@@ -1,10 +1,12 @@
 const postcss = require('postcss')
 
+const borderLeftRight = require('./lib/border-left-right')
+const borderTopBottom = require('./lib/border-top-bottom')
 const fontSizeLineHeight = require('./lib/font-size-line-height')
-const marginTopBottom = require('./lib/margin-top-bottom')
 const marginLeftRight = require('./lib/margin-left-right')
-const paddingTopBottom = require('./lib/padding-top-bottom')
+const marginTopBottom = require('./lib/margin-top-bottom')
 const paddingLeftRight = require('./lib/padding-left-right')
+const paddingTopBottom = require('./lib/padding-top-bottom')
 
 module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result) => {
   root.walkAtRules('ghost', (util) => {
@@ -26,6 +28,12 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
         break
       case 'padding-left-right':
         paddingLeftRight(util, args)
+        break
+      case 'border-top-bottom':
+        borderTopBottom(util, args)
+        break
+      case 'border-left-right':
+        borderLeftRight(util, args)
         break
       default:
         // TODO: implement error handling
