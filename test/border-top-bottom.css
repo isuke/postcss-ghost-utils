@@ -1,0 +1,3 @@
+.one {
+  @ghost border-top-bottom(2px solid black);
+}
