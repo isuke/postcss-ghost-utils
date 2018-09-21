@@ -1,0 +1,7 @@
+.one {
+  @ghost border-bottom-radius(4px);
+}
+
+.two {
+  @ghost border-bottom-radius(4px 2px);
+}
