@@ -7,6 +7,7 @@ const marginLeftRight = require('./lib/margin-left-right')
 const marginTopBottom = require('./lib/margin-top-bottom')
 const paddingLeftRight = require('./lib/padding-left-right')
 const paddingTopBottom = require('./lib/padding-top-bottom')
+const size = require('./lib/size')
 
 module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result) => {
   root.walkAtRules('ghost', (util) => {
@@ -34,6 +35,9 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
         break
       case 'border-left-right':
         borderLeftRight(util, args)
+        break
+      case 'size':
+        size(util, args)
         break
       default:
         // TODO: implement error handling
