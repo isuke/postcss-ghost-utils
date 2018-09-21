@@ -1,7 +1,11 @@
 const postcss = require('postcss')
 
+const borderBottomRadius = require('./lib/border-bottom-radius')
+const borderLeftRadius = require('./lib/border-left-radius')
 const borderLeftRight = require('./lib/border-left-right')
+const borderRightRadius = require('./lib/border-right-radius')
 const borderTopBottom = require('./lib/border-top-bottom')
+const borderTopRadius = require('./lib/border-top-radius')
 const fontSizeLineHeight = require('./lib/font-size-line-height')
 const marginLeftRight = require('./lib/margin-left-right')
 const marginTopBottom = require('./lib/margin-top-bottom')
@@ -38,6 +42,18 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
         break
       case 'size':
         size(util, args)
+        break
+      case 'border-top-radius':
+        borderTopRadius(util, args)
+        break
+      case 'border-bottom-radius':
+        borderBottomRadius(util, args)
+        break
+      case 'border-left-radius':
+        borderLeftRadius(util, args)
+        break
+      case 'border-right-radius':
+        borderRightRadius(util, args)
         break
       default:
         // TODO: implement error handling

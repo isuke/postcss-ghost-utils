@@ -6,8 +6,12 @@ const test = require('ava')
 const ghost = require('./')
 
 const names = [
+  'border-bottom-radius',
+  'border-left-radius',
   'border-left-right',
+  'border-right-radius',
   'border-top-bottom',
+  'border-top-radius',
   'font-size-line-height',
   'margin-left-right',
   'margin-top-bottom',

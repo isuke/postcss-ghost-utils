@@ -1,0 +1,9 @@
+.one {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.two {
+  border-top-left-radius: 4px 2px;
+  border-top-right-radius: 4px 2px;
+}
