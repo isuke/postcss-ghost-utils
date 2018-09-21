@@ -1,0 +1,7 @@
+.one {
+  @ghost size(160px);
+}
+
+.two {
+  @ghost size(160px, 240px);
+}
