@@ -6,6 +6,7 @@ const test = require('ava')
 const ghost = require('./')
 
 const names = [
+  'all-buttons',
   'border-bottom-radius',
   'border-left-radius',
   'border-left-right',
