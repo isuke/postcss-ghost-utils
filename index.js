@@ -12,6 +12,7 @@ const marginTopBottom = require('./lib/margin-top-bottom')
 const paddingLeftRight = require('./lib/padding-left-right')
 const paddingTopBottom = require('./lib/padding-top-bottom')
 const size = require('./lib/size')
+const allButtons = require('./lib/all-buttons')
 
 module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result) => {
   root.walkAtRules('ghost', (util) => {
@@ -54,6 +55,9 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
         break
       case 'border-right-radius':
         borderRightRadius(util, args)
+        break
+      case 'all-buttons':
+        allButtons(util, args)
         break
       default:
         // TODO: implement error handling
