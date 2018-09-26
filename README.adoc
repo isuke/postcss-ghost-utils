@@ -14,3 +14,27 @@
 = postcss-ghost-utils
 
 image:https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master["Build Status", link="https://travis-ci.org/isuke/postcss-ghost-utils"]
+
+postcss-ghost-utils is a https://github.com/postcss/postcss[PostCSS] plugin.
+
+This plugin can give you useful css syntax.
+It is not include old css technique (ex. clearfix).
+
+== Usage
+
+[source,sh]
+----
+$ npm install -D postcss postcss-ghost-utils
+# or
+$ yarn add -D postcss postcss-ghost-utils
+----
+
+[source,js]
+.postcss.config.js
+----
+module.exports = {
+  plugins: [
+    require('postcss-ghost-utils')
+  ]
+}
+----
