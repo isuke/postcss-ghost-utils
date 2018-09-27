@@ -6,7 +6,7 @@
 :sectnumlevels: 3
 :source-highlighter: highlightjs
 :toc:
-:toclevels: 1
+:toclevels: 2
 
 :author: isuke
 :email: isuke770@gmail.com
@@ -36,5 +36,300 @@ module.exports = {
   plugins: [
     require('postcss-ghost-utils')
   ]
+}
+----
+
+== List
+
+=== font-size-line-height
+
+[source,css]
+.input
+----
+.one {
+  @ghost font-size-line-height(16px, 2px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  font-size: 16px;
+  line-height: calc(16px + 2px * 2);
+}
+----
+
+=== margin-left-right
+
+[source,css]
+.input
+----
+.one {
+  @ghost margin-left-right(16px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+----
+
+=== margin-top-bottom
+
+[source,css]
+.input
+----
+.one {
+  @ghost margin-top-bottom(16px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+----
+
+=== padding-left-right
+
+[source,css]
+.input
+----
+.one {
+  @ghost padding-left-right(16px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+----
+
+=== padding-top-bottom
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-top-bottom(2px solid black);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+----
+
+=== border-left-right
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-left-right(2px solid black);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+----
+
+=== border-top-bottom
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-top-bottom(2px solid black);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+----
+
+=== border-top-radius
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-top-radius(4px);
+}
+
+.two {
+  @ghost border-top-radius(4px 2px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.two {
+  border-top-left-radius: 4px 2px;
+  border-top-right-radius: 4px 2px;
+}
+----
+
+=== border-bottom-radius
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-bottom-radius(4px);
+}
+
+.two {
+  @ghost border-bottom-radius(4px 2px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.two {
+  border-bottom-left-radius: 4px 2px;
+  border-bottom-right-radius: 4px 2px;
+}
+----
+
+=== border-left-radius
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-left-radius(4px);
+}
+
+.two {
+  @ghost border-left-radius(4px 2px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.two {
+  border-top-left-radius: 4px 2px;
+  border-bottom-left-radius: 4px 2px;
+}
+----
+
+=== border-right-radius
+
+[source,css]
+.input
+----
+.one {
+  @ghost border-right-radius(4px);
+}
+
+.two {
+  @ghost border-right-radius(4px 2px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.two {
+  border-top-right-radius: 4px 2px;
+  border-bottom-right-radius: 4px 2px;
+}
+----
+
+=== size
+
+[source,css]
+.input
+----
+.one {
+  @ghost size(160px);
+}
+
+.two {
+  @ghost size(160px, 240px);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  width: 160px;
+  height: 160px;
+}
+
+.two {
+  width: 160px;
+  height: 240px;
+}
+----
+
+=== all-buttons
+
+[source,css]
+.input
+----
+@ghost all-buttons {
+  background-color: blue;
+  border: none;
+}
+----
+
+[source,css]
+.output
+----
+button, [type='button'], [type='reset'], [type='submit'] {
+  background-color: blue;
+  border: none;
 }
 ----
