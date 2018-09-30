@@ -13,6 +13,7 @@ const names = [
   'border-right-radius',
   'border-top-bottom',
   'border-top-radius',
+  'circle',
   'font-size-line-height',
   'margin-left-right',
   'margin-top-bottom',

@@ -1,18 +1,19 @@
 const postcss = require('postcss')
 
+const allButtons = require('./lib/all-buttons')
 const borderBottomRadius = require('./lib/border-bottom-radius')
 const borderLeftRadius = require('./lib/border-left-radius')
 const borderLeftRight = require('./lib/border-left-right')
 const borderRightRadius = require('./lib/border-right-radius')
 const borderTopBottom = require('./lib/border-top-bottom')
 const borderTopRadius = require('./lib/border-top-radius')
+const circle = require('./lib/circle')
 const fontSizeLineHeight = require('./lib/font-size-line-height')
 const marginLeftRight = require('./lib/margin-left-right')
 const marginTopBottom = require('./lib/margin-top-bottom')
 const paddingLeftRight = require('./lib/padding-left-right')
 const paddingTopBottom = require('./lib/padding-top-bottom')
 const size = require('./lib/size')
-const allButtons = require('./lib/all-buttons')
 
 module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result) => {
   root.walkAtRules('ghost', (util) => {
@@ -55,6 +56,9 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
         break
       case 'border-right-radius':
         borderRightRadius(util, args)
+        break
+      case 'circle':
+        circle(util, args)
         break
       case 'all-buttons':
         allButtons(util, args)

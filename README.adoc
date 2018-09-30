@@ -314,6 +314,27 @@ module.exports = {
 }
 ----
 
+=== circle
+
+[source,css]
+.input
+----
+.one {
+  @ghost circle(200px, #ff0000);
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ff0000;
+}
+----
+
 === all-buttons
 
 [source,css]
