@@ -3,7 +3,7 @@
 :lang: en
 :sectanchors:
 :sectnums:
-:sectnumlevels: 3
+:sectnumlevels: 1
 :source-highlighter: highlightjs
 :toc:
 :toclevels: 2
