@@ -17,6 +17,7 @@ const names = [
   'font-size-line-height',
   'margin-left-right',
   'margin-top-bottom',
+  'new-line',
   'padding-left-right',
   'padding-top-bottom',
   'size',

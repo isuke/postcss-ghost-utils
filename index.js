@@ -12,6 +12,7 @@ const rules = [
   { name: 'font-size-line-height', func: require('./lib/font-size-line-height') },
   { name: 'margin-left-right', func: require('./lib/margin-left-right') },
   { name: 'margin-top-bottom', func: require('./lib/margin-top-bottom') },
+  { name: 'new-line', func: require('./lib/new-line') },
   { name: 'padding-left-right', func: require('./lib/padding-left-right') },
   { name: 'padding-top-bottom', func: require('./lib/padding-top-bottom') },
   { name: 'size', func: require('./lib/size') },

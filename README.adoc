@@ -60,6 +60,25 @@ module.exports = {
 }
 ----
 
+=== new-line
+
+[source,css]
+.input
+----
+.one {
+  @ghost new-line;
+}
+----
+
+[source,css]
+.output
+----
+.one {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+----
+
 === margin-left-right
 
 [source,css]
