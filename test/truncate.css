@@ -1,0 +1,7 @@
+.one {
+  @ghost truncate;
+}
+
+.two {
+  @ghost truncate('-');
+}
