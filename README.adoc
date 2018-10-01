@@ -142,7 +142,7 @@ module.exports = {
 .input
 ----
 .one {
-  @ghost border-top-bottom(2px solid black);
+  @ghost padding-top-bottom(16px);
 }
 ----
 
@@ -150,8 +150,8 @@ module.exports = {
 .output
 ----
 .one {
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 ----
 
