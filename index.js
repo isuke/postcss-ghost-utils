@@ -32,7 +32,7 @@ module.exports = postcss.plugin('postcss-ghost-utils', (_opts) => (root, _result
     if (rule) {
       rule.func(util, args)
     } else {
-      // TODO: implement error handling
+      throw util.error(`Unknown rule '${name}'`, { plugin: 'postcss-ghost-utils' })
     }
   })
 })
