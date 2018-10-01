@@ -20,6 +20,7 @@ const names = [
   'padding-left-right',
   'padding-top-bottom',
   'size',
+  'truncate',
 ]
 
 const tmpDirPath = fs.mkdtempSync(`${os.tmpdir()}/postcss-ghost-utils-`)
