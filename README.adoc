@@ -320,7 +320,9 @@ module.exports = {
 .input
 ----
 .one {
-  @ghost circle(200px, #ff0000);
+  @ghost circle(200px);
+  background-color: #ff0000;
+  border: 10px solid #ffffff;
 }
 ----
 
@@ -332,6 +334,7 @@ module.exports = {
   height: 200px;
   border-radius: 50%;
   background-color: #ff0000;
+  border: 10px solid #ffffff;
 }
 ----
 

@@ -1,3 +1,5 @@
 .one {
-  @ghost circle(200px, #ff0000);
+  @ghost circle(200px);
+  background-color: #ff0000;
+  border: 10px solid #ffffff;
 }
