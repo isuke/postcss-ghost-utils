@@ -39,6 +39,12 @@ module.exports = {
 }
 ----
 
+=== Use on CODEPEN
+
+Please open JavaScript setting of your pen, and add follows a URL.
+
+* latest: `https://codepen.io/isuke/pen/WaQoKE`
+
 == List
 
 === font-size-line-height

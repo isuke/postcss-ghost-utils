@@ -17,18 +17,23 @@
     "url": "https://github.com/isuke/postcss-ghost-utils"
   },
   "scripts": {
-    "lint": "eslint index.js test.js lib/**/*.js",
-    "fix": "eslint --fix index.js test.js lib/**/*.js",
-    "test": "ava --verbose"
+    "lint": "eslint index.js test.js codepen.js lib/**/*.js",
+    "fix": "eslint --fix index.js test.js codepen.js lib/**/*.js",
+    "test": "ava --verbose",
+    "build:codepen": "browserify codepen.js | babel --presets=env | uglifyjs --compress --mangle > codepen.bundle.js"
   },
   "dependencies": {
     "postcss": "^7.0.2"
   },
   "devDependencies": {
     "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "browserify": "^16.2.3",
     "eslint": "^5.6.0",
     "eslint-config-prettier": "^3.0.1",
     "eslint-plugin-prettier": "^2.6.2",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "uglify-js": "^3.4.9"
   }
 }
