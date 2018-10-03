@@ -1,4 +1,21 @@
 button, [type='button'], [type='reset'], [type='submit'] {
-  background-color: blue;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+button:hover, [type='button']:hover, [type='reset']:hover, [type='submit']:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+button:active, [type='button']:active, [type='reset']:active, [type='submit']:active {
+  transform: none;
+  box-shadow: none;
+}
+
+button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }

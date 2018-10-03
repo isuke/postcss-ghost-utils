@@ -1,4 +1,21 @@
 @ghost all-buttons {
-  background-color: blue;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
+  outline: 0;
+}
+
+@ghost all-buttons(hover) {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@ghost all-buttons(active) {
+  transform: none;
+  box-shadow: none;
+}
+
+@ghost all-buttons(focus) {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
