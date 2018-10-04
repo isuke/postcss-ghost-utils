@@ -11,14 +11,14 @@
 :author: isuke
 :email: isuke770@gmail.com
 
-= postcss-ghost-utils
-
-image:https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master["Build Status", link="https://travis-ci.org/isuke/postcss-ghost-utils"]
+= postcss-ghost-utils image:https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master["Build Status", link="https://travis-ci.org/isuke/postcss-ghost-utils"]
 
 postcss-ghost-utils is a https://github.com/postcss/postcss[PostCSS] plugin.
 
 This plugin can give you useful css syntax.
 It is not include old css technique (ex. clearfix).
+
+https://codepen.io/isuke/pen/xywgVx[Try it on CodePen]
 
 == Usage
 
@@ -39,13 +39,13 @@ module.exports = {
 }
 ----
 
-=== Use on CODEPEN
+=== Use on CodePen
 
-Please open JavaScript setting of your pen, and add follows a URL.
+Open JavaScript setting of your pen, and add follows a URL.
 
 * latest: `https://codepen.io/isuke/pen/WaQoKE`
 
-== List
+== Rule List
 
 === font-size-line-height
 
@@ -362,6 +362,10 @@ Please open JavaScript setting of your pen, and add follows a URL.
   border: 10px solid #ffffff;
 }
 ----
+
+== Experimental Rule List
+
+The following rules may not work with not pure css ex) LESS, SASS.
 
 === all-buttons
 
