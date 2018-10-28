@@ -57,160 +57,213 @@ Open JavaScript setting of your pen, and add follows a URL.
 
 === font-size-line-height
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost font-size-line-height(16px, 2px);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   font-size: 16px;
   line-height: calc(16px + 2px * 2);
 }
 ----
+|===
 
 === new-line
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost new-line;
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 ----
+|===
 
 === margin-left-right
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost margin-left-right(16px);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   margin-left: 16px;
   margin-right: 16px;
 }
 ----
+|===
 
 === margin-top-bottom
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost margin-top-bottom(16px);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   margin-top: 16px;
   margin-bottom: 16px;
 }
 ----
+|===
 
 === padding-left-right
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost padding-left-right(16px);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   padding-left: 16px;
   padding-right: 16px;
 }
 ----
+|===
 
 === padding-top-bottom
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost padding-top-bottom(16px);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   padding-top: 16px;
   padding-bottom: 16px;
 }
 ----
+|===
 
 === border-left-right
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-left-right(2px solid black);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
 ----
+|===
 
 === border-top-bottom
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-top-bottom(2px solid black);
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
 ----
+|===
 
 === border-top-radius
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-top-radius(4px);
@@ -221,8 +274,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-top-left-radius: 4px;
@@ -234,11 +287,17 @@ Open JavaScript setting of your pen, and add follows a URL.
   border-top-right-radius: 4px 2px;
 }
 ----
+|===
 
 === border-bottom-radius
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-bottom-radius(4px);
@@ -249,8 +308,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-bottom-left-radius: 4px;
@@ -262,11 +321,17 @@ Open JavaScript setting of your pen, and add follows a URL.
   border-bottom-right-radius: 4px 2px;
 }
 ----
+|===
 
 === border-left-radius
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-left-radius(4px);
@@ -277,8 +342,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-top-left-radius: 4px;
@@ -290,11 +355,17 @@ Open JavaScript setting of your pen, and add follows a URL.
   border-bottom-left-radius: 4px 2px;
 }
 ----
+|===
 
 === border-right-radius
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost border-right-radius(4px);
@@ -305,8 +376,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   border-top-right-radius: 4px;
@@ -318,11 +389,17 @@ Open JavaScript setting of your pen, and add follows a URL.
   border-bottom-right-radius: 4px 2px;
 }
 ----
+|===
 
 === size
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost size(160px);
@@ -333,8 +410,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   width: 160px;
@@ -346,11 +423,17 @@ Open JavaScript setting of your pen, and add follows a URL.
   height: 240px;
 }
 ----
+|===
 
 === circle
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 .one {
   @ghost circle(200px);
@@ -359,8 +442,8 @@ Open JavaScript setting of your pen, and add follows a URL.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 .one {
   width: 200px;
@@ -370,6 +453,7 @@ Open JavaScript setting of your pen, and add follows a URL.
   border: 10px solid #ffffff;
 }
 ----
+|===
 
 == Experimental Rule List
 
@@ -377,8 +461,13 @@ The following rules may not work with not pure css ex) LESS, SASS.
 
 === all-buttons
 
-[source,css]
-.input
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
 ----
 @ghost all-buttons {
   background-color: transparent;
@@ -403,8 +492,8 @@ The following rules may not work with not pure css ex) LESS, SASS.
 }
 ----
 
-[source,css]
-.output
+a|
+[source, css]
 ----
 button, [type='button'], [type='reset'], [type='submit'] {
   background-color: transparent;
@@ -428,3 +517,4 @@ button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 ----
+|===
