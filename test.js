@@ -21,6 +21,7 @@ const names = [
   'padding-left-right',
   'padding-top-bottom',
   'size',
+  'transition',
   'truncate',
 ]
 

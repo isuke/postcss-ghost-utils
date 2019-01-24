@@ -1,0 +1,7 @@
+.one {
+  @ghost transition(100ms, ease-in, color);
+}
+
+.two {
+  @ghost transition(100ms, ease-in, color, background-color, border-color);
+}

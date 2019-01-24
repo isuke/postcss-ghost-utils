@@ -455,6 +455,38 @@ a|
 ----
 |===
 
+=== transition
+
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
+----
+.one {
+  @ghost transition(100ms, ease-in, color);
+}
+
+.two {
+  @ghost transition(100ms, ease-in, color, background-color, border-color);
+}
+----
+
+a|
+[source, css]
+----
+.one {
+  transition: 100ms ease-in color;
+}
+
+.two {
+  transition: 100ms ease-in color, 100ms ease-in background-color, 100ms ease-in border-color;
+}
+----
+|===
+
 == Experimental Rule List
 
 The following rules may not work with not pure css ex) LESS, SASS.
