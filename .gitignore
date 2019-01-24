@@ -1,2 +1,7 @@
 node_modules/
 yarn-error.log
+codepen.bundle.js
+
+# I use README.adoc.
+# README.md for only npm.
+README.md
