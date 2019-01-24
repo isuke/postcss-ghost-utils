@@ -105,6 +105,42 @@ a|
 ----
 |===
 
+=== truncate
+
+[cols="1,1", options="header"]
+|===
+| Input
+| Output
+
+a|
+[source, css]
+----
+.one {
+  @ghost truncate;
+}
+
+.two {
+  @ghost truncate('-');
+}
+----
+
+a|
+[source, css]
+----
+.one {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.two {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: '-';
+}
+----
+|===
+
 === margin-left-right
 
 [cols="1,1", options="header"]
