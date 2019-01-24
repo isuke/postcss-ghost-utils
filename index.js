@@ -16,6 +16,7 @@ const rules = [
   { name: 'padding-left-right', func: require('./lib/padding-left-right') },
   { name: 'padding-top-bottom', func: require('./lib/padding-top-bottom') },
   { name: 'size', func: require('./lib/size') },
+  { name: 'transition', func: require('./lib/transition') },
   { name: 'truncate', func: require('./lib/truncate') },
 ]
 

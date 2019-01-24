@@ -1,0 +1,7 @@
+.one {
+  transition: 100ms ease-in color;
+}
+
+.two {
+  transition: 100ms ease-in color, 100ms ease-in background-color, 100ms ease-in border-color;
+}
