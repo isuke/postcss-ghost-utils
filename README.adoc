@@ -17,16 +17,16 @@
 image:https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png["Title", link="https://github.com/isuke/postcss-ghost-utils"]
 
 [.text-center.center]
-image:https://img.shields.io/badge/node-v9-026e00.svg["node v9", link="https://nodejs.org/ja/download/releases/"]
 image:https://img.shields.io/badge/node-v10-026e00.svg["node v10", link="https://nodejs.org/ja/download/releases/"]
 image:https://img.shields.io/badge/node-v11-026e00.svg["node v11", link="https://nodejs.org/ja/download/releases/"]
+image:https://img.shields.io/badge/node-v12-026e00.svg["node v12", link="https://nodejs.org/ja/download/releases/"]
 
 postcss-ghost-utils is a https://github.com/postcss/postcss[PostCSS] plugin.
 
 This plugin can give you useful css syntax.
-It is not include old css technique (ex. clearfix).
+**It is NOT include old css technique (ex. clearfix).**
 
-https://codepen.io/isuke/pen/xywgVx[Try it on CodePen]
+https://codepen.io/isuke/pen/xywgVx[[Try it on CodePen]]
 
 == Usage
 
@@ -51,7 +51,8 @@ module.exports = {
 
 Open JavaScript setting of your pen, and add follows a URL.
 
-* latest(v0.0.5): `https://codepen.io/isuke/pen/WaQoKE`
+* latest(v0.0.6): `https://codepen.io/isuke/pen/WaQoKE`
+* v0.0.6: `https://codepen.io/isuke/pen/oReQqW`
 * v0.0.5: `https://codepen.io/isuke/pen/BMNJza`
 * v0.0.4: `https://codepen.io/isuke/pen/LqVeGr`
 
