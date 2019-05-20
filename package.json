@@ -23,17 +23,17 @@
     "build:codepen": "browserify codepen.js | babel --presets=env | uglifyjs --compress --mangle > codepen.bundle.js"
   },
   "dependencies": {
-    "postcss": "^7.0.2"
+    "postcss": "^7.0.16"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^1.4.1",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "browserify": "^16.2.3",
-    "eslint": "^5.6.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-plugin-prettier": "^2.6.2",
-    "prettier": "^1.14.2",
-    "uglify-js": "^3.4.9"
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.17.1",
+    "uglify-js": "^3.5.13"
   }
 }
