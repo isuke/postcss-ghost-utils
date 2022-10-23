@@ -1,4 +1,4 @@
-# postcss-ghost-utils [!["Build Status"](https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master)](https://travis-ci.org/isuke/postcss-ghost-utils) [!["npm"](https://img.shields.io/npm/v/postcss-ghost-utils.svg)](https://www.npmjs.com/package/postcss-ghost-utils) [!["git-consistent friendly"](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
+# postcss-ghost-utils [![CircleCI](https://dl.circleci.com/status-badge/img/gh/isuke/postcss-ghost-utils/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/isuke/postcss-ghost-utils/tree/master) [!["npm"](https://img.shields.io/npm/v/postcss-ghost-utils.svg)](https://www.npmjs.com/package/postcss-ghost-utils) [!["git-consistent friendly"](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
 
 <img align="center" src="https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png">
 
