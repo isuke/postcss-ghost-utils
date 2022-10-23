@@ -1,123 +1,114 @@
-:chapter-label:
-:icons: font
-:lang: en
-:sectanchors:
-:sectnums:
-:sectnumlevels: 1
-:source-highlighter: highlightjs
-:toc: preamble
-:toclevels: 2
+# postcss-ghost-utils [!["Build Status"](https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master)](https://travis-ci.org/isuke/postcss-ghost-utils) [!["npm"](https://img.shields.io/npm/v/postcss-ghost-utils.svg)](https://www.npmjs.com/package/postcss-ghost-utils) [!["git-consistent friendly"](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
 
-:author: isuke
-:email: isuke770@gmail.com
+<img align="center" src="https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png">
 
-= postcss-ghost-utils image:https://travis-ci.org/isuke/postcss-ghost-utils.svg?branch=master["Build Status", link="https://travis-ci.org/isuke/postcss-ghost-utils"] image:https://img.shields.io/npm/v/postcss-ghost-utils.svg["npm", link="https://www.npmjs.com/package/postcss-ghost-utils"] image:https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg["git-consistent friendly", link="https://github.com/isuke/git-consistent"]
+[!["node v10"](https://img.shields.io/badge/node-v10-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v11"](https://img.shields.io/badge/node-v11-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v12"](https://img.shields.io/badge/node-v12-026e00.svg)](https://nodejs.org/ja/download/releases/)
 
-[.text-center.center]
-image:https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png["Title", link="https://github.com/isuke/postcss-ghost-utils"]
-
-[.text-center.center]
-image:https://img.shields.io/badge/node-v10-026e00.svg["node v10", link="https://nodejs.org/ja/download/releases/"]
-image:https://img.shields.io/badge/node-v11-026e00.svg["node v11", link="https://nodejs.org/ja/download/releases/"]
-image:https://img.shields.io/badge/node-v12-026e00.svg["node v12", link="https://nodejs.org/ja/download/releases/"]
-
-postcss-ghost-utils is a https://github.com/postcss/postcss[PostCSS] plugin.
+postcss-ghost-utils is a [PostCSS](https://github.com/postcss/postcss) plugin.
 
 This plugin can give you useful css syntax.
 **It is NOT include old css technique (ex. clearfix).**
 
-https://codepen.io/isuke/pen/xywgVx[[Try it on CodePen]]
+[Try it on CodePen](https://codepen.io/isuke/pen/xywgVx)
 
-== Usage
+## Usage
 
-[source,sh]
-----
+### Install
+
+```sh
 $ npm install -D postcss postcss-ghost-utils
 # or
 $ yarn add -D postcss postcss-ghost-utils
-----
+```
 
-[source,js]
-.postcss.config.js
-----
+`.postcss.config.js`
+```js
 module.exports = {
   plugins: [
     require('postcss-ghost-utils')
   ]
 }
-----
+```
 
-=== Use on CodePen
+### Use on CodePen
 
 Open JavaScript setting of your pen, and add follows a URL.
 
-* latest(v0.0.6): `https://codepen.io/isuke/pen/WaQoKE`
-* v0.0.6: `https://codepen.io/isuke/pen/oReQqW`
-* v0.0.5: `https://codepen.io/isuke/pen/BMNJza`
-* v0.0.4: `https://codepen.io/isuke/pen/LqVeGr`
+* latest(v0.0.6): https://codepen.io/isuke/pen/WaQoKE
+* v0.0.6: https://codepen.io/isuke/pen/oReQqW
+* v0.0.5: https://codepen.io/isuke/pen/BMNJza
+* v0.0.4: https://codepen.io/isuke/pen/LqVeGr
 
-== Rule List
+## Rule List
 
-=== font-size-line-height
+### font-size-line-height
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost font-size-line-height(16px, 2px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   font-size: 16px;
   line-height: calc(16px + 2px * 2);
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== new-line
+### new-line
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost new-line;
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   white-space: pre-wrap;
   word-wrap: break-word;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== truncate
+### truncate
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost truncate;
 }
@@ -125,11 +116,12 @@ a|
 .two {
   @ghost truncate('-');
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   white-space: nowrap;
   overflow: hidden;
@@ -141,169 +133,189 @@ a|
   overflow: hidden;
   text-overflow: '-';
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== margin-left-right
+### margin-left-right
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost margin-left-right(16px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   margin-left: 16px;
   margin-right: 16px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== margin-top-bottom
+### margin-top-bottom
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost margin-top-bottom(16px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== padding-left-right
+### padding-left-right
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost padding-left-right(16px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   padding-left: 16px;
   padding-right: 16px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== padding-top-bottom
+### padding-top-bottom
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost padding-top-bottom(16px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-left-right
+### border-left-right
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-left-right(2px solid black);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-left: 2px solid black;
   border-right: 2px solid black;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-top-bottom
+### border-top-bottom
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-top-bottom(2px solid black);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-top-radius
+### border-top-radius
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-top-radius(4px);
 }
@@ -311,11 +323,12 @@ a|
 .two {
   @ghost border-top-radius(4px 2px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -325,19 +338,21 @@ a|
   border-top-left-radius: 4px 2px;
   border-top-right-radius: 4px 2px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-bottom-radius
+### border-bottom-radius
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-bottom-radius(4px);
 }
@@ -345,11 +360,12 @@ a|
 .two {
   @ghost border-bottom-radius(4px 2px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -359,19 +375,21 @@ a|
   border-bottom-left-radius: 4px 2px;
   border-bottom-right-radius: 4px 2px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-left-radius
+### border-left-radius
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-left-radius(4px);
 }
@@ -379,11 +397,12 @@ a|
 .two {
   @ghost border-left-radius(4px 2px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -393,19 +412,21 @@ a|
   border-top-left-radius: 4px 2px;
   border-bottom-left-radius: 4px 2px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== border-right-radius
+### border-right-radius
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost border-right-radius(4px);
 }
@@ -413,11 +434,12 @@ a|
 .two {
   @ghost border-right-radius(4px 2px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -427,19 +449,21 @@ a|
   border-top-right-radius: 4px 2px;
   border-bottom-right-radius: 4px 2px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== size
+### size
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost size(160px);
 }
@@ -447,11 +471,12 @@ a|
 .two {
   @ghost size(160px, 240px);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   width: 160px;
   height: 160px;
@@ -461,29 +486,32 @@ a|
   width: 160px;
   height: 240px;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== circle
+### circle
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost circle(200px);
   background-color: #ff0000;
   border: 10px solid #ffffff;
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   width: 200px;
   height: 200px;
@@ -491,19 +519,21 @@ a|
   background-color: #ff0000;
   border: 10px solid #ffffff;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-=== transition
+### transition
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 .one {
   @ghost transition(100ms, ease-in, color);
 }
@@ -511,11 +541,12 @@ a|
 .two {
   @ghost transition(100ms, ease-in, color, background-color, border-color);
 }
-----
+```
 
-a|
-[source, css]
-----
+</td>
+<td>
+
+```css
 .one {
   transition: 100ms ease-in color;
 }
@@ -523,23 +554,25 @@ a|
 .two {
   transition: 100ms ease-in color, 100ms ease-in background-color, 100ms ease-in border-color;
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
 
-== Experimental Rule List
+## Experimental Rule List
 
 The following rules may not work with not pure css ex) LESS, SASS.
 
-=== all-buttons
+### all-buttons
 
-[cols="1,1", options="header"]
-|===
-| Input
-| Output
+<table>
+<tr>
+<td> Input </td> <td> Output </td>
+</tr>
+<tr>
+<td>
 
-a|
-[source, css]
-----
+```css
 @ghost all-buttons {
   background-color: transparent;
   border: none;
@@ -561,11 +594,11 @@ a|
   transform: translateY(-2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-----
+```
+</td>
+<td>
 
-a|
-[source, css]
-----
+```css
 button, [type='button'], [type='reset'], [type='submit'] {
   background-color: transparent;
   border: none;
@@ -587,5 +620,7 @@ button:focus, [type='button']:focus, [type='reset']:focus, [type='submit']:focus
   transform: translateY(-2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
-----
-|===
+```
+</td>
+</tr>
+</table>
