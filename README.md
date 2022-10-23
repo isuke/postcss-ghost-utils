@@ -12,8 +12,6 @@ postcss-ghost-utils is a [PostCSS](https://github.com/postcss/postcss) plugin.
 This plugin can give you useful css syntax.
 **It is NOT include old css technique (ex. clearfix).**
 
-[Try it on CodePen](https://codepen.io/isuke/pen/xywgVx)
-
 ## Usage
 
 ### Install
@@ -32,15 +30,6 @@ module.exports = {
   ]
 }
 ```
-
-### Use on CodePen
-
-Open JavaScript setting of your pen, and add follows a URL.
-
-* latest(v0.0.6): https://codepen.io/isuke/pen/WaQoKE
-* v0.0.6: https://codepen.io/isuke/pen/oReQqW
-* v0.0.5: https://codepen.io/isuke/pen/BMNJza
-* v0.0.4: https://codepen.io/isuke/pen/LqVeGr
 
 ## Rule List
 

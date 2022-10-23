@@ -17,10 +17,9 @@
     "url": "https://github.com/isuke/postcss-ghost-utils"
   },
   "scripts": {
-    "lint": "eslint index.js test.js codepen.js lib/**/*.js",
-    "fix": "eslint --fix index.js test.js codepen.js lib/**/*.js",
-    "test": "ava --verbose",
-    "build:codepen": "browserify codepen.js | babel --presets=env | uglifyjs --compress --mangle > codepen.bundle.js"
+    "lint": "eslint index.js test.js lib/**/*.js",
+    "fix": "eslint --fix index.js test.js lib/**/*.js",
+    "test": "ava --verbose"
   },
   "dependencies": {
     "postcss": "8.4.18"
