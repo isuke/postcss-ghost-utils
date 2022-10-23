@@ -2,9 +2,10 @@
 
 <img align="center" src="https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png">
 
-[!["node v10"](https://img.shields.io/badge/node-v10-026e00.svg)](https://nodejs.org/ja/download/releases/)
-[!["node v11"](https://img.shields.io/badge/node-v11-026e00.svg)](https://nodejs.org/ja/download/releases/)
-[!["node v12"](https://img.shields.io/badge/node-v12-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v14"](https://img.shields.io/badge/node-v14-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v16"](https://img.shields.io/badge/node-v16-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v17"](https://img.shields.io/badge/node-v17-026e00.svg)](https://nodejs.org/ja/download/releases/)
+[!["node v18"](https://img.shields.io/badge/node-v18-026e00.svg)](https://nodejs.org/ja/download/releases/)
 
 postcss-ghost-utils is a [PostCSS](https://github.com/postcss/postcss) plugin.
 

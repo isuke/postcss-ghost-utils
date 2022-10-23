@@ -4,9 +4,10 @@ notifications:
   email: false
 language: node_js
 node_js:
-  - "10"
-  - "11"
-  - "12"
+  - "14"
+  - "16"
+  - "17"
+  - "18"
 script:
   - yarn run lint
   - yarn run test
