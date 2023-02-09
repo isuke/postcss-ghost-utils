@@ -1,10 +1,9 @@
-# postcss-ghost-utils [![CircleCI](https://dl.circleci.com/status-badge/img/gh/isuke/postcss-ghost-utils/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/isuke/postcss-ghost-utils/tree/master) [!["npm"](https://img.shields.io/npm/v/postcss-ghost-utils.svg)](https://www.npmjs.com/package/postcss-ghost-utils) [!["git-consistent friendly"](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
+# postcss-ghost-utils [![Test and Lint](https://github.com/isuke/postcss-ghost-utils/actions/workflows/main.yml/badge.svg)](https://github.com/isuke/postcss-ghost-utils/actions/workflows/main.yml) [!["npm"](https://img.shields.io/npm/v/postcss-ghost-utils.svg)](https://www.npmjs.com/package/postcss-ghost-utils) [!["git-consistent friendly"](https://img.shields.io/badge/git--consistent-friendly-brightgreen.svg)](https://github.com/isuke/git-consistent)
 
 <img align="center" src="https://raw.githubusercontent.com/isuke/postcss-ghost-utils/images/title-plain.png">
 
 [!["node v14"](https://img.shields.io/badge/node-v14-026e00.svg)](https://nodejs.org/ja/download/releases/)
 [!["node v16"](https://img.shields.io/badge/node-v16-026e00.svg)](https://nodejs.org/ja/download/releases/)
-[!["node v17"](https://img.shields.io/badge/node-v17-026e00.svg)](https://nodejs.org/ja/download/releases/)
 [!["node v18"](https://img.shields.io/badge/node-v18-026e00.svg)](https://nodejs.org/ja/download/releases/)
 
 postcss-ghost-utils is a [PostCSS](https://github.com/postcss/postcss) plugin.
